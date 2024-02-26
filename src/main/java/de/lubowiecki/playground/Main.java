@@ -2,6 +2,18 @@ package de.lubowiecki.playground;
 
 public class Main {
 
+    // Benennung von Klassen
+    // PascalCase: FahrzeugVerwaltung (Beginnt mit Großbuchstaben, jedes neue Wort wieder groß)
+
+    String name1 = new String("Hans");
+    String name2 = new String("Peter");
+    // String = Klassenname
+    // name1 = Variablenname
+
+    // camelCase: geburtsDatum (Beginnt mit Kleinbuchstaben, jedes neue Wort groß)
+    // Wird für Variablen und Methodennamen verwendet
+
+
     // Einstiegspunkt in das Programm
     // Programme ohne main-Methode können nicht gestartet werden
     public static void main(String[] args) {
