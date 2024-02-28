@@ -2,7 +2,7 @@ package de.lubowiecki.uebung2;
 
 import java.util.Arrays;
 
-public class DiceApp {
+public class DiceApp { // Namer der public Klasse ist namensgebend für die Datei
 
     public static void main(String[] args) {
 
@@ -24,6 +24,9 @@ public class DiceApp {
         System.out.println(dc1.roll());
         System.out.println(Arrays.toString(dc1.roll(10)));
 
-
     }
+}
+
+class Abc {
+
 }
