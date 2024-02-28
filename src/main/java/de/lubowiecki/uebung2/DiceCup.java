@@ -48,13 +48,15 @@ public class DiceCup {
             stats[index]++; // ++ Wert an der gewünschten Position um 1 hochzählen
         }
 
-        // TODO: Auf StringBuilder umstellen
-        String output = "";
+        StringBuilder output = new StringBuilder();
 
         for (int i = 0; i < stats.length; i++) {
-            output += stats[i] + " mal " + (i + 1) + "\n";
+            output.append(stats[i])
+                  .append(" mal ")
+                  .append(i + 1)
+                  .append("\n");
         }
 
-        return output;
+        return output.toString();
     }
 }
