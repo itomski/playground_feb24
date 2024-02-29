@@ -22,6 +22,5 @@ public class ZahlenTest {
         System.out.println(Integer.toOctalString(i));
         System.out.println(Integer.toBinaryString(i));
 
-
     }
 }
