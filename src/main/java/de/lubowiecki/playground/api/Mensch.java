@@ -59,6 +59,18 @@ class Mensch {
                 .toString();
     }
 
+    // equals und hashCode werden immer zusammen implementiert
+    // und basieren auf gleichen Eigenschaften
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Mensch mensch = (Mensch) o;
+        // Objects ist eine Utility-Klasse mit statischen Hilfsmethoden
+        return Objects.equals(vorname, mensch.vorname) && Objects.equals(nachname, mensch.nachname);
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(vorname, nachname);
