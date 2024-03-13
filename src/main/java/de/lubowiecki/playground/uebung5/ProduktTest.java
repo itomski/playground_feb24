@@ -24,9 +24,6 @@ public class ProduktTest {
         // befüllen
 
         produkte.add(p);
-
-
-
     }
 }
 
