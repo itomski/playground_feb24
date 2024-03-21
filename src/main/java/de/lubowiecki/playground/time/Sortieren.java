@@ -1,10 +1,7 @@
 package de.lubowiecki.playground.time;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Sortieren {
 
@@ -39,5 +36,11 @@ public class Sortieren {
 
         // Hier werden 30 Tage gem. Kalender weitergerechnet
         System.out.println(ld2.plusDays(30));
+
+        Map<LocalDate, List<Termin>> cal = new TreeMap<>();
+        cal.put(LocalDate.of(2024, 3,19), new ArrayList<>());
+        LocalDate auswahl = LocalDate.of(2024, 3,19);
+        cal.get(auswahl).add(new Termin());
+
     }
 }
